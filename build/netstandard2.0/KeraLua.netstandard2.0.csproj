@@ -18,5 +18,5 @@
       <OutputPath>..\..\lib\Debug</OutputPath>
     </PropertyGroup>
     <Import Project="..\..\src\KeraLua.Core.projitems" Label="Shared" Condition="Exists('..\..\src\KeraLua.Core.projitems')" />
-    <Import Project="..\targets\KeraLua.Sign.targets" />
+    <!--Import Project="..\targets\KeraLua.Sign.targets" /-->
   </Project>
