@@ -4,7 +4,7 @@
     <RootNamespace>KeraLua</RootNamespace>
     <AssemblyName>KeraLua</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <SignAssembly>true</SignAssembly>
+    <!--SignAssembly>true</SignAssembly-->
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>portable</DebugType>
@@ -17,5 +17,5 @@
     <OutputPath>..\..\lib\Debug\netstandard2.0\</OutputPath>
   </PropertyGroup>
   <Import Project="..\..\src\KeraLua.Core.projitems" Label="Shared" Condition="Exists('..\..\src\KeraLua.Core.projitems')" />
-  <Import Project="..\targets\KeraLua.Sign.targets" />
+  <!--Import Project="..\targets\KeraLua.Sign.targets" /-->
 </Project>
