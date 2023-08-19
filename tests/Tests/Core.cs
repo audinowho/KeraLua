@@ -3,9 +3,8 @@ using System;
 using NUnit.Framework;
 using System.IO;
 using System.Diagnostics;
-using System.Text;
 
-#if MONOTOUCH
+#if __IOS__ || __TVOS__ || __WATCHOS__ || __MACCATALYST__
     using ObjCRuntime;
 #endif
 
@@ -14,17 +13,18 @@ namespace KeraLua.Tests
     [TestFixture]
     public class Core
     {
-        public static LuaFunction func_print = print;
+        internal static LuaFunction func_print = Print;
 
-#if MONOTOUCH
+#if __IOS__ || __TVOS__ || __WATCHOS__ || __MACCATALYST__
         [MonoPInvokeCallback (typeof (LuaFunction))]
 #endif
-        static int print (IntPtr p)
+        private static int Print (IntPtr p)
         {
             var state = Lua.FromIntPtr(p);
             int n = state.GetTop();  /* number of arguments */
             int i;
-            for (i=1; i<=n; i++) {
+            for (i = 1; i <= n; i++)
+            {
                 LuaType type = state.Type(i);
                 switch (type) {
                         
@@ -49,7 +49,7 @@ namespace KeraLua.Tests
         Lua state;
         string GetTestPath(string name)
         {
-            string path = new Uri(GetType().Assembly.CodeBase).AbsolutePath;
+            string path = new Uri(GetType().Assembly.Location).AbsolutePath;
             path = Path.GetDirectoryName(path);
             path = Path.Combine(path, "LuaTests", "core");
             path = Path.Combine (path, name + ".lua");
