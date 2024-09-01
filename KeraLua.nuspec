@@ -13,25 +13,25 @@
       C# Native bindings of Lua 5.4 (compatible with iOS/Mac/Android/.NET/UWP) 
     </description>
     <releaseNotes>Release: 2bffe65</releaseNotes>
-    <copyright>Copyright © Vinicius Jarina 2021</copyright>
+    <copyright>Copyright © Vinicius Jarina 2024</copyright>
     <tags>lua keralua</tags> 
     <repository type="git" url="https://github.com/nlua/KeraLua" commit="708ba30e982deccb1248d099806bc00e362fbda4" />
   </metadata>
   <files>
     <file src="lib\Release\MonoAndroid\KeraLua.dll" target="lib\MonoAndroid" />
     <file src="lib\Release\MonoAndroid\KeraLua.xml" target="lib\MonoAndroid" />
-    <file src="lib\Release\net6.0-android\KeraLua.xml" target="lib\net6.0-android28" />
-    <file src="lib\Release\net6.0-android\KeraLua.dll" target="lib\net6.0-android28" />
-    <file src="lib\Release\net6.0\KeraLua.dll" target="lib\net6.0" />
-    <file src="lib\Release\net6.0\KeraLua.xml" target="lib\net6.0" />
-    <file src="lib\Release\net6.0-ios\KeraLua.xml" target="lib\net6.0-ios11.0" />
-    <file src="lib\Release\net6.0-ios\KeraLua.dll" target="lib\net6.0-ios11.0" />
-    <file src="lib\Release\net6.0-maccatalyst\KeraLua.xml" target="lib\net6.0-maccatalyst13.0" />
-    <file src="lib\Release\net6.0-maccatalyst\KeraLua.dll" target="lib\net6.0-maccatalyst13.0" />
-    <file src="lib\Release\net6.0-tvos\KeraLua.xml" target="lib\net6.0-tvos11.0" />
-    <file src="lib\Release\net6.0-tvos\KeraLua.dll" target="lib\net6.0-tvos11.0" />
-    <file src="lib\Release\net6.0-macos\KeraLua.xml" target="lib\net6.0-macos10.13" />
-    <file src="lib\Release\net6.0-macos\KeraLua.dll" target="lib\net6.0-macos10.13" />
+    <file src="lib\Release\net8.0-android\KeraLua.xml" target="lib\net8.0-android28" />
+    <file src="lib\Release\net8.0-android\KeraLua.dll" target="lib\net8.0-android28" />
+    <file src="lib\Release\net8.0\KeraLua.dll" target="lib\net8.0" />
+    <file src="lib\Release\net8.0\KeraLua.xml" target="lib\net8.0" />
+    <file src="lib\Release\net8.0-ios\KeraLua.xml" target="lib\net8.0-ios11.0" />
+    <file src="lib\Release\net8.0-ios\KeraLua.dll" target="lib\net8.0-ios11.0" />
+    <file src="lib\Release\net8.0-maccatalyst\KeraLua.xml" target="lib\net8.0-maccatalyst13.0" />
+    <file src="lib\Release\net8.0-maccatalyst\KeraLua.dll" target="lib\net8.0-maccatalyst13.0" />
+    <file src="lib\Release\net8.0-tvos\KeraLua.xml" target="lib\net8.0-tvos11.0" />
+    <file src="lib\Release\net8.0-tvos\KeraLua.dll" target="lib\net8.0-tvos11.0" />
+    <file src="lib\Release\net8.0-macos\KeraLua.xml" target="lib\net8.0-macos10.13" />
+    <file src="lib\Release\net8.0-macos\KeraLua.dll" target="lib\net8.0-macos10.13" />
     <file src="lib\Release\net46\KeraLua.dll" target="lib\net46" />
     <file src="lib\Release\net46\KeraLua.xml" target="lib\net46" />
     <file src="lib\Release\uap10.0\KeraLua.dll" target="lib\uap10.0" />
